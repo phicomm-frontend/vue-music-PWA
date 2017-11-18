@@ -1,7 +1,7 @@
 {
-  "name": "vue2.0",
+  "name": "music app",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "A Vue.js music app project",
   "author": "zhihao.yu <zhihao.yu@phicomm.com>",
   "private": true,
   "scripts": {
@@ -12,10 +12,12 @@
   "dependencies": {
     "vue": "^2.3.3",
     "vue-router": "^2.6.0"
+
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
+    "babel-eslint": "^7.1.1",
     "babel-loader": "^7.1.1",
     "babel-plugin-transform-runtime": "^6.22.0",
     "babel-preset-env": "^1.3.2",
