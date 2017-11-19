@@ -1,13 +1,17 @@
 <template>
   <div id="app">
-    <img src="./common/image/logo.png">
+    <m-header></m-header>
     <router-view></router-view>
   </div>
 </template>
 
-<script>
+<script type="text/ecmascript-6">
+
+  import MHeader from './components/m-header/m-header'
 export default {
-  name: 'app'
+  components:{
+    MHeader:MHeader
+  }
 }
 </script>
 
@@ -18,6 +22,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
