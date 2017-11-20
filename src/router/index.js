@@ -10,6 +10,10 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
+      path: '/', // 默认进入推荐页面
+      redirect: '/recommend'
+    },
+    {
       path: '/rank',
       component: Rank
     },{
