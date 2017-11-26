@@ -16,13 +16,16 @@ export default new Router({
     {
       path: '/rank',
       component: Rank
-    },{
+    },
+    {
       path: '/recommend',
       component: Recommend
-    },{
+    },
+    {
       path: '/singer',
       component: Singer
-    },{
+    },
+    {
       path: '/search',
       component: Search
     }
