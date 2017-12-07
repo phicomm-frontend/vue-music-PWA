@@ -24,25 +24,21 @@
   }
 </script>
 
-<style lang="scss" scoped>
-  .my-tab {
-    display: flex;
-    height: 44px;
-    line-height: 44px;
-    text-align:center;
-    font-size: 14px;
-    .tab-item{
-      width: 25%;
-      margin: 0 22px;
-      color: rgba(255, 255, 255, 0.5);
-    }
-    .tab-link{
-      padding-bottom: 5px;
-    }
-    .router-link-active {
-      color: orange;
-      border-bottom: 2px solid orange;
-    }
-  }
+<style lang="stylus" scoped>
+  .my-tab
+    display: flex
+    height: 44px
+    line-height: 44px
+    text-align:center
+    font-size: 14px
+    .tab-item
+      width: 25%
+      margin: 0 22px
+      color: rgba(255, 255, 255, 0.5)
+    .tab-link
+      padding-bottom: 5px
+    .router-link-active
+      color: orange
+      border-bottom: 2px solid orange
 
 </style>

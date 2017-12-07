@@ -53,6 +53,8 @@
     "sass-loader": "^6.0.6",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
     "url-loader": "^0.5.8",
     "vue-loader": "^12.1.0",
     "vue-style-loader": "^3.0.1",
