@@ -30,13 +30,13 @@
         default: 4000
       }
     },
-    data() {
+    data () {
       return {
         dots: [],
         currentPageIndex: 0
       }
     },
-    mounted() {
+    mounted () {
       setTimeout(() => {
         this._setSliderWidth()
         this._initDots()
@@ -55,15 +55,15 @@
         this.slider.refresh()
       })
     },
-    activated() {
+    activated () {
       if (this.autoPlay) {
         this._play()
       }
     },
-    deactivated() {
+    deactivated () {
       clearTimeout(this.timer)
     },
-    beforeDestroy() {
+    beforeDestroy () {
       clearTimeout(this.timer)
     },
     methods: {
@@ -84,7 +84,7 @@
         }
         this.$refs.sliderGroup.style.width = width + 'px'
       },
-      _initSlider() {
+      _initSlider () {
         this.slider = new BScroll(this.$refs.slider, {
           scrollX: true,
           scrollY: false,
@@ -113,10 +113,10 @@
           }
         })
       },
-      _initDots() {
+      _initDots () {
         this.dots = new Array(this.children.length)
       },
-      _play() {
+      _play () {
         let pageIndex = this.currentPageIndex + 1
         if (this.loop) {
           pageIndex += 1

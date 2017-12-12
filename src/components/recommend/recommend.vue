@@ -42,38 +42,38 @@
   import {ERR_OK} from 'api/config'
 
   export default {
-    data() {
+    data () {
       return {
         recommends: [],
         discList: []
       }
     },
-    created() {
-      this._getRecommend();
+    created () {
+      this._getRecommend()
 
-      this._getDiscList();
+      this._getDiscList()
     },
     methods: {
-      loadImage() {
+      loadImage () {
         if (!this.checkloaded) {
-          this.checkloaded = true;
-          this.$refs.scroll.refresh();
+          this.checkloaded = true
+          this.$refs.scroll.refresh()
         }
       },
-      _getRecommend() {
+      _getRecommend () {
         getRecommend().then((res) => {
           if (res.code === ERR_OK) {
-            this.recommends = res.data.slider;
+            this.recommends = res.data.slider
           }
         })
       },
-      _getDiscList() {
+      _getDiscList () {
         getDiscList().then((res) => {
           if (res.code === ERR_OK) {
-            this.discList = res.data.list;
+            this.discList = res.data.list
           }
         })
-      },
+      }
     },
     components: {
       Slider,
