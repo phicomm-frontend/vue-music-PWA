@@ -39,10 +39,13 @@
   import Loading from 'base/loading/loading'
   import Scroll from 'base/scroll/scroll'
   import {getRecommend, getDiscList} from 'api/recommend'
+  import {playlistMixin} from 'common/js/mixin'
   import {ERR_OK} from 'api/config'
+  import {mapMutations} from 'vuex'
 
   export default {
-    data () {
+    mixins: [playlistMixin],
+    data() {
       return {
         recommends: [],
         discList: []
@@ -54,11 +57,23 @@
       this._getDiscList()
     },
     methods: {
-      loadImage () {
+      handlePlaylist(playlist) {
+        const bottom = playlist.length > 0 ? '60px' : ''
+
+        this.$refs.recommend.style.bottom = bottom
+        this.$refs.scroll.refresh()
+      },
+      loadImage() {
         if (!this.checkloaded) {
           this.checkloaded = true
           this.$refs.scroll.refresh()
         }
+      },
+      selectItem(item) {
+        this.$router.push({
+          path: `/recommend/${item.dissid}`
+        })
+        this.setDisc(item)
       },
       _getRecommend () {
         getRecommend().then((res) => {
@@ -73,7 +88,10 @@
             this.discList = res.data.list
           }
         })
-      }
+      },
+      ...mapMutations({
+        setDisc: 'SET_DISC'
+      })
     },
     components: {
       Slider,

@@ -23,10 +23,11 @@ module.exports = {
     // 'semi': [2, "always"], // 语句强制分号结尾
     'eqeqeq': 1, // 比较的时候使用严格等于
     "no-nested-ternary": 0, // 不允许使用嵌套的三目运算符
-    'space-before-function-paren':1, // 函数前是否有空格,
+    "eol-last": 0,
+    'space-before-function-paren':0, // 函数前是否有空格,
     'no-console': 1, // 禁用no-console,
     'no-alert':1, // 禁用alert
-    'quotes': [ 'error', 'single' ], // 单括号
+    'quotes': 0, // 单括号
     'no-empty': 'warn', // 禁止出现空语句块
     'default-case': 'warn', // 要求 switch 语句中有 default 分支
     'dot-notation': ['warn', { 'allowKeywords': false }], // 对象属性访问，要求使用点号，而不是方括号
