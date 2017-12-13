@@ -14,7 +14,7 @@ import 'common/stylus/index.styl'
 fastclick.attach(document.body)
 
 Vue.use(VueLazyload, {
-  loading: require('common/image/wangzai.jpg')
+  loading: require('common/image/singer.png')
 })
 
 /* eslint-disable no-new */
