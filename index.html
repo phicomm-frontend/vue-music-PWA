@@ -6,7 +6,9 @@
     <title>斐讯云音乐</title>
     <link rel="apple-touch-icon" sizes="114x114" href="//oop9roh1a.bkt.clouddn.com/icon.png">
     <meta name="full-screen" content="yes">
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath %>static/manifest.json">
+    <meta name="theme-color" content="#4DBA87">
+
   </head>
   <body>
     <div id="app"></div>
@@ -23,7 +25,6 @@
         }
       }
       requestFullScreen()
-
     </script>
   </body>
 </html>

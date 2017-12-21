@@ -1,0 +1,15 @@
+{
+  "name": "斐讯云音乐",
+  "short_name": "my-project",
+  "icons": [
+    {
+      "src": "//oop9roh1a.bkt.clouddn.com/icon.png",
+      "sizes": "114x114",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#4DBA87"
+}
